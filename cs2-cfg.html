@@ -1,0 +1,91 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CS2 CFG — полный набор ✦ hursaalo</title><meta name="description" content="autoexec, пресеты donk, m0NESY, s1mple, ZywOo, ropz, shoke, параметры запуска и NVIDIA."><meta name="robots" content="noindex"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><header class="top"><a href="./" class="brand">✦ hursaalo</a></header><main><section class="hero"><div class="sq">🟨🟣</div><h1>CS2 CFG — полный набор</h1><p class="lead">autoexec, пресеты donk, m0NESY, s1mple, ZywOo, ropz, shoke, параметры запуска и NVIDIA.</p><a class="dl" href="files/CS2_ULTIMATE_PACK_RU.zip" download>⬇ Скачать архив (5132 КБ)</a></section><article class="guide"><h2>Cs2 Ultimate Pack — Русская Сборка</h2>
+<h2>Содержимое</h2>
+<ul>
+<li>game/csgo/cfg/autoexec.cfg — основной autoexec с базовыми настройками.</li>
+<li>game/csgo/cfg/presets/ — 6 сторонних пресетов: donk, m0NESY, s1mple, ZywOo, ropz, shoke.</li>
+<li>GUIDES/NVIDIA-CS2.txt — настройки панели NVIDIA и Reflex.</li>
+<li>GUIDES/screenshots/ — исходные скриншоты из предоставленного архива.</li>
+<li>GUIDES/ПАРАМЕТРЫ_ЗАПУСКА.txt — строка запуска и установка.</li>
+</ul>
+<h2>Установка</h2>
+<ol>
+<li>Откройте Steam → Библиотека → Counter-Strike 2 → Свойства → Установленные файлы → Обзор.</li>
+<li>Откройте game/csgo/cfg в папке игры.</li>
+<li>Скопируйте autoexec.cfg и папку presets в эту папку.</li>
+<li>В свойствах CS2 → Общие → Параметры запуска добавьте:</li>
+</ol>
+<div class="code"><code>-novid +exec autoexec.cfg -console</code><button class="copy" data-c="-novid +exec autoexec.cfg -console">Копировать</button></div>
+<ol>
+<li>В игре откройте консоль и проверьте загрузку командой:</li>
+</ol>
+<div class="code"><code>exec autoexec</code><button class="copy" data-c="exec autoexec">Копировать</button></div>
+<ol>
+<li>Чтобы применить пресет из presets, попробуйте:</li>
+</ol>
+<div class="code"><code>exec presets/donk</code><button class="copy" data-c="exec presets/donk">Копировать</button></div>
+<div class="code"><code>exec presets/m0NESY</code><button class="copy" data-c="exec presets/m0NESY">Копировать</button></div>
+<div class="code"><code>exec presets/s1mple</code><button class="copy" data-c="exec presets/s1mple">Копировать</button></div>
+<div class="code"><code>exec presets/ZywOo</code><button class="copy" data-c="exec presets/ZywOo">Копировать</button></div>
+<div class="code"><code>exec presets/ropz</code><button class="copy" data-c="exec presets/ropz">Копировать</button></div>
+<div class="code"><code>exec presets/shoke</code><button class="copy" data-c="exec presets/shoke">Копировать</button></div>
+<p>Если вложенный путь не срабатывает в вашей версии/конфигурации, скопируйте выбранный .cfg из presets непосредственно в cfg и запускайте exec имя_файла.</p>
+<h2>Важные Замечания</h2>
+<ul>
+<li>Чувствительность в пресетах не является универсальной: итог зависит от DPI, разрешения, частоты опроса и привычки.</li>
+<li>Имена пресетов игроков — названия файлов из предоставленного архива; актуальность значений и принадлежность профессиональным игрокам не подтверждена.</li>
+<li>Некоторые старые команды (например, m_rawinput, cl_righthand или jumpthrow alias/bind) могут игнорироваться либо не работать в актуальной CS2. Если команда выводит Unknown command, удалите её.</li>
+<li>Не добавляйте вслепую старые параметры запуска вроде -tickrate 128, -high, -threads или -freq. Начните с короткой строки выше и проверяйте результат.</li>
+<li>NVIDIA Control Panel настраивается вручную; эти значения не записываются через autoexec.</li>
+<li>Для официальных матчей избегайте биндов, которые автоматизируют несколько игровых действий одним нажатием, если они нарушают текущие правила Valve.</li>
+<li>Перед заменой своих файлов сделайте резервную копию.</li>
+</ul>
+<h2>Параметры Запуска Cs2</h2>
+<p>Рекомендуемая базовая строка:</p>
+<div class="code"><code>-novid +exec autoexec.cfg -console</code><button class="copy" data-c="-novid +exec autoexec.cfg -console">Копировать</button></div>
+<p>Установка:</p>
+<p>Steam → Библиотека → Counter-Strike 2 → Свойства → Общие → Параметры запуска.</p>
+<p>Не добавляйте старые твики (например, -tickrate 128, -high, -threads X) без конкретной причины.</p>
+<h2>Настройки Nvidia Для Cs2 — По-Русски</h2>
+<h2>ПУТЬ</h2>
+<p>NVIDIA Control Panel → Управление параметрами 3D → Программные настройки</p>
+<p>→ Counter-Strike 2 (cs2.exe)</p>
+<h2>Основной Профиль</h2>
+<p>Режим управления электропитанием</p>
+<p>→ Предпочтителен режим максимальной производительности</p>
+<p>Предпочтительная частота обновления</p>
+<p>→ Наивысшая доступная</p>
+<p>Вертикальная синхронизация</p>
+<p>→ Выкл.</p>
+<p>Макс. частота кадров</p>
+<p>→ Управляется приложением</p>
+<p>Качество фильтрации текстур</p>
+<p>→ Производительность (опционально)</p>
+<p>Режим низкой задержки</p>
+<p>→ Выкл., если NVIDIA Reflex включён в CS2.</p>
+<h2>Shader Cache</h2>
+<p>Оставь значение по умолчанию/включённое для драйвера. Не меняй его без</p>
+<p>конкретной причины.</p>
+<h2>G-Sync</h2>
+<p>Если используешь G-SYNC/G-SYNC Compatible, схема синхронизации зависит от</p>
+<p>монитора и цели (минимальная задержка или отсутствие tearing). Не смешивай</p>
+<p>несколько разных схем вслепую.</p>
+<h2>Nvidia Reflex В Cs2</h2>
+<p>CS2 → Настройки → Видео → Расширенные настройки →</p>
+<p>NVIDIA Reflex — низкая задержка → Вкл.</p>
+<p>«Вкл. + Boost» — отдельный режим: он может дополнительно снижать задержку,</p>
+<p>но увеличивает энергопотребление и может немного уменьшить FPS.</p>
+<h2>Скриншоты</h2>
+<p>01_NVIDIA_панель_настройки.png — программный профиль CS2 в панели NVIDIA.</p>
+<p>02_CS2_Reflex_и_видео.png — пример расположения Reflex и видео-настроек.</p>
+<h2>Важно</h2>
+<p>NVIDIA Control Panel не хранится внутри autoexec.cfg. Эти параметры нужно</p>
+<p>выставить вручную в панели NVIDIA.</p>
+<h2>Пресеты В Этом Архиве</h2>
+<p>donk.cfg</p>
+<p>m0NESY.cfg</p>
+<p>s1mple.cfg</p>
+<p>ZywOo.cfg</p>
+<p>ropz.cfg</p>
+<p>shoke.cfg</p>
+<p>Файлы скопированы из предоставленного архива без изменения значений. Это сторонние пресеты, а не подтверждённые актуальные официальные настройки игроков.</p>
+<p>Для применения: поместите нужный .cfg в game/csgo/cfg и в консоли выполните exec имя_файла.</p></article><section class="thanks"><h2>✦ Спасибо за покупку!</h2><p>Если всё получилось — подтвердите заказ на FunPay и оставьте короткий отзыв. Это очень помогает.</p><p>Что-то не открылось или непонятно — напишите в чат заказа, помогу.</p></section></main><footer>Материал носит справочный характер. Названия игр и сервисов принадлежат их правообладателям.</footer><script>document.addEventListener('click',e=>{const b=e.target.closest('.copy');if(!b)return;navigator.clipboard.writeText(b.dataset.c).then(()=>{const t=b.textContent;b.textContent='Скопировано ✓';setTimeout(()=>b.textContent=t,1400)})});</script></body></html>

@@ -1,0 +1,440 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Discord — гайд по ботам ✦ hursaalo</title><meta name="description" content="Carl-bot, Dyno, Ticket Tool, Wick, музыка и уровни."><meta name="robots" content="noindex"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><header class="top"><a href="./" class="brand">✦ hursaalo</a></header><main><section class="hero"><div class="sq">🟦🟣</div><h1>Discord — гайд по ботам</h1><p class="lead">Carl-bot, Dyno, Ticket Tool, Wick, музыка и уровни.</p></section><article class="guide"><h2>Discord Bots — Инструкция 2026</h2>
+<p>Это гайд. Ботов добавляете вы сами.</p>
+<p>Мы не заходим на ваш сервер.</p>
+<p>Мёртвые боты (не ищите, не добавляйте):</p>
+<p>Groovy · Rythm · Hydra Music · MEE6 Music</p>
+<p>Если сайт обещает «бесплатный YouTube как у Groovy» — обходите.</p>
+<p>Такие боты банят.</p>
+<h2>ЧТО ПОСТАВИТЬ (стартовый набор)</h2>
+<p>3 бота хватает почти любому серверу:</p>
+<ol>
+<li>Carl-bot      роли, реакции, автомод</li>
+<li>Dyno          модерация, логи, тикеты</li>
+<li>Jockie Music  музыка</li>
+</ol>
+<p>По желанию:</p>
+<ol>
+<li>Ticket Tool   отдельные тикеты поддержки</li>
+<li>Wick          антирейд / антинюк</li>
+<li>ProBot / JuniperBot / MEE6   welcome + уровни (выбрать ОДИН)</li>
+</ol>
+<p>Не ставьте 8+ ботов. Они начинают драться за права.</p>
+<h2>Официальные Ссылки</h2>
+<h2>Модерация И Роли</h2>
+<ul>
+<li>Carl-bot — <a href="https://carl.gg" target="_blank" rel="noopener">carl.gg</a></li>
+<li>Dyno — <a href="https://dyno.gg" target="_blank" rel="noopener">dyno.gg</a></li>
+<li>Ticket Tool — <a href="https://tickettool.xyz" target="_blank" rel="noopener">tickettool.xyz</a></li>
+<li>Wick — <a href="https://wickbot.com" target="_blank" rel="noopener">wickbot.com</a></li>
+</ul>
+<h2>WELCOME / УРОВНИ  (берите один)</h2>
+<ul>
+<li>ProBot — <a href="https://probot.io" target="_blank" rel="noopener">probot.io</a></li>
+<li>JuniperBot — <a href="https://juniper.bot" target="_blank" rel="noopener">juniper.bot</a></li>
+<li>MEE6 — <a href="https://mee6.xyz" target="_blank" rel="noopener">mee6.xyz</a></li>
+</ul>
+<h2>Музыка</h2>
+<ul>
+<li>Jockie Music — <a href="https://www.jockiemusic.com" target="_blank" rel="noopener">www.jockiemusic.com</a></li>
+<li>FredBoat — <a href="https://fredboat.com" target="_blank" rel="noopener">fredboat.com</a></li>
+<li>Green-bot — <a href="https://green-bot.app" target="_blank" rel="noopener">green-bot.app</a> Chip           Discord → App Directory → Chip</li>
+</ul>
+<h2>Права При Приглашении</h2>
+<p>Давать:</p>
+<ul>
+<li>Manage Roles</li>
+<li>Manage Channels</li>
+<li>Kick / Ban / Timeout   (только модерационным)</li>
+<li>Manage Messages</li>
+<li>Read Message History</li>
+<li>Send Messages + Embed Links</li>
+<li>Add Reactions</li>
+<li>View Audit Log         (Dyno, Wick)</li>
+<li>Connect + Speak        (музыка)</li>
+</ul>
+<p>НЕ давать Administrator.</p>
+<p>Если бота взломают — с админкой он снесёт сервер.</p>
+<p>Роль бота:</p>
+<p>выше ролей участников, ниже владельца и админов.</p>
+<p>Реакции не выдают роль → роль бота слишком низко.</p>
+<ol>
+<li>CARL-BOT — роли и автомод</li>
+</ol>
+<ol>
+<li><a href="https://carl.gg" target="_blank" rel="noopener">carl.gg</a>  → Login with Discord → Add to Server</li>
+<li>Дашборд → ваш сервер</li>
+<li>Роли по реакциям:</li>
+</ol>
+<ul>
+<li>канал #roles</li>
+<li>сообщение: «нажми эмодзи — получи роль»</li>
+<li>Carl-bot → Reaction roles → New</li>
+<li>эмодзи → роль → Save</li>
+</ul>
+<ol>
+<li>Автомод:</li>
+</ol>
+<ul>
+<li>инвайты чужих серверов, спам, массовые упоминания</li>
+<li>действие: удалить + таймаут</li>
+</ul>
+<ol>
+<li>Welcome (если не ставите отдельный welcome-бот):</li>
+</ol>
+<div class="code block"><pre>     {user.mention} прочитай #rules и возьми роль в #roles
+
+
+══════════════════════════════════════════════════
+  2. DYNO — модерация и логи
+══════════════════════════════════════════════════
+
+  1. https://dyno.gg  → Add to Server
+  2. Включить модули:
+     Moderation · Action Log · Automod · Tickets
+     (Tickets — если не ставите Ticket Tool)
+  3. Action Log → канал #logs  (только модеры)
+     писать: баны, кики, таймауты, удаления, входы
+  4. Автомод: капс, спам, инвайты от обычных участников
+     + свой список запрещённых слов
+  5. Назначить роль Moderator
+     команды: /mute  /warn  /ban
+
+
+══════════════════════════════════════════════════
+  3. TICKET TOOL — тикеты поддержки
+══════════════════════════════════════════════════
+
+  Не ставьте Ticket Tool И Dyno Tickets сразу — будут двойные тикеты.
+  Выберите один.
+
+  1. https://tickettool.xyz  → Add to Server
+  2. Категория TICKETS (пустая)
+  3. Канал #support — все видят, пишет только бот
+  4. Dashboard → Panels → New
+     кнопка «Открыть тикет»
+     открывать в категории TICKETS
+     staff-роли: Moderator, Admin
+  5. Транскрипты закрытых тикетов → #ticket-logs (только staff)
+  6. Проверка: кнопка создаёт приватный канал
+
+
+══════════════════════════════════════════════════
+  4. WICK — антирейд (по желанию)
+══════════════════════════════════════════════════
+
+  1. https://wickbot.com  → Add to Server
+  2. Роль Wick — высокая, сразу под владельцем
+  3. Включить: anti-bot, anti-raid, anti mass-ban, anti channel-delete
+  4. Новые аккаунты: чат через 10 минут после входа
+  5. Два антинюка сразу (Wick + ещё один) — конфликт, не надо
+
+
+══════════════════════════════════════════════════
+  5. WELCOME И УРОВНИ — выбрать ОДИН
+══════════════════════════════════════════════════
+
+  ProBot         https://probot.io     картинка при входе + XP
+  JuniperBot     https://juniper.bot   удобно, если сервер на русском
+  MEE6           https://mee6.xyz      XP на бесплатном плане ок,
+                                       почти всё остальное — Premium
+
+  Текст приветствия:
+
+  Привет, {user}. Добро пожаловать на {server}.
+  1) Прочитай #rules
+  2) Возьми роль в #roles
+  3) Напиши в #general
+
+
+══════════════════════════════════════════════════
+  6. МУЗЫКА
+══════════════════════════════════════════════════
+
+  Главный: Jockie Music
+  https://www.jockiemusic.com
+
+  Почему он:
+  • бесплатный
+  • Spotify, Apple Music, Deezer, SoundCloud, радио
+  • до 4 копий на одном сервере = 4 войса с разной музыкой
+
+  Команды:
+    m!play  название или ссылка
+    m!skip
+    m!queue
+    m!stop
+    m!invite     ← добавить Jockie 2 / 3 / 4
+
+  Запасной: FredBoat   https://fredboat.com
+  С дашбордом: Green-bot   https://green-bot.app
+  Лёгкий: Chip   (App Directory → Chip)
+
+  Ставьте ОДИН музыкальный бренд. Jockie + Chip в одном войсе =
+  две песни сразу.
+
+  Права музыке: Connect + Speak. Без Administrator.
+
+  За 5 минут:
+  1. Войс Music + текст #music-commands
+  2. Пригласить Jockie с официального сайта
+  3. Зайти в войс →  /play  или  m!play
+  4. Несколько войс-комнат с музыкой → m!invite
+
+  YouTube-ссылки у ботов в 2026 часто не играют.
+  Кидайте Spotify / Apple Music / SoundCloud.
+
+  Без бота: Discord → Настройки → Связанные аккаунты → Spotify
+  → Listen Along. Работает только если у людей Spotify Premium.
+
+
+──────────────────────────────────────────────────
+  КАРТА СЕРВЕРА ПОД БОТОВ
+──────────────────────────────────────────────────
+
+  INFO
+  #rules             правила, боты не пишут
+  #roles             Carl-bot, роли по реакциям
+  #announcements     только админы
+
+  CHAT
+  #welcome           welcome-бот
+  #general
+  #media
+  #music-commands    команды Jockie
+
+  SUPPORT
+  #support           панель Ticket Tool / Dyno
+  TICKETS            категория открытых тикетов
+  #ticket-logs       только модеры
+  #logs              Dyno / Wick, только модеры
+
+  VOICE
+  Lobby · Music · Duo · AFK
+
+
+──────────────────────────────────────────────────
+  ТИПИЧНЫЕ ОШИБКИ
+──────────────────────────────────────────────────
+
+  • Роль бота ниже роли, которую он должен выдавать
+    → реакции не работают
+  • @everyone видит #logs и категорию TICKETS
+    → приватность сломана
+  • Два тикет-бота сразу
+    → двойные тикеты
+  • Administrator у каждого бота
+    → один взлом = мёртвый сервер
+  • Фичи MEE6 Premium на бесплатном плане
+    → просто не включатся
+  • Groovy / Rythm / «бесплатный YouTube»
+    → бот мёртвый или завтра забанят
+  • Бот в войсе, звука нет
+    → нет права Speak, или вы в наушниках deafen
+  • Две песни сразу
+    → два музыкальных бота в одном войсе
+
+
+──────────────────────────────────────────────────
+  ЧЕКЛИСТ НА 15 МИНУТ
+──────────────────────────────────────────────────
+
+  [ ] Carl-bot приглашён, роль выше участников
+  [ ] Реакции в #roles выдают роль
+  [ ] Dyno пишет логи в закрытый #logs
+  [ ] Тикеты открываются из #support
+  [ ] @everyone НЕ видит TICKETS и #logs
+  [ ] Welcome приходит в #welcome
+  [ ] Jockie играет в войсе Music
+  [ ] Проверка с альта: зашёл → приветствие,
+      staff-каналы не видны
+
+
+──────────────────────────────────────────────────
+  ЧЕГО В ФАЙЛЕ НЕТ
+──────────────────────────────────────────────────
+
+  Мы не заходим в ваш Discord.
+  Мы не настраиваем ботов удалённо.
+  Мы не продаём Nitro, бусты и кастомный код.
+  Только официальные ссылки и пошаговая настройка.
+
+  Текст в [скобках] замените на свои каналы, если копируете шаблоны.
+</pre><button class="copy" data-c="     {user.mention} прочитай #rules и возьми роль в #roles
+
+
+══════════════════════════════════════════════════
+  2. DYNO — модерация и логи
+══════════════════════════════════════════════════
+
+  1. https://dyno.gg  → Add to Server
+  2. Включить модули:
+     Moderation · Action Log · Automod · Tickets
+     (Tickets — если не ставите Ticket Tool)
+  3. Action Log → канал #logs  (только модеры)
+     писать: баны, кики, таймауты, удаления, входы
+  4. Автомод: капс, спам, инвайты от обычных участников
+     + свой список запрещённых слов
+  5. Назначить роль Moderator
+     команды: /mute  /warn  /ban
+
+
+══════════════════════════════════════════════════
+  3. TICKET TOOL — тикеты поддержки
+══════════════════════════════════════════════════
+
+  Не ставьте Ticket Tool И Dyno Tickets сразу — будут двойные тикеты.
+  Выберите один.
+
+  1. https://tickettool.xyz  → Add to Server
+  2. Категория TICKETS (пустая)
+  3. Канал #support — все видят, пишет только бот
+  4. Dashboard → Panels → New
+     кнопка «Открыть тикет»
+     открывать в категории TICKETS
+     staff-роли: Moderator, Admin
+  5. Транскрипты закрытых тикетов → #ticket-logs (только staff)
+  6. Проверка: кнопка создаёт приватный канал
+
+
+══════════════════════════════════════════════════
+  4. WICK — антирейд (по желанию)
+══════════════════════════════════════════════════
+
+  1. https://wickbot.com  → Add to Server
+  2. Роль Wick — высокая, сразу под владельцем
+  3. Включить: anti-bot, anti-raid, anti mass-ban, anti channel-delete
+  4. Новые аккаунты: чат через 10 минут после входа
+  5. Два антинюка сразу (Wick + ещё один) — конфликт, не надо
+
+
+══════════════════════════════════════════════════
+  5. WELCOME И УРОВНИ — выбрать ОДИН
+══════════════════════════════════════════════════
+
+  ProBot         https://probot.io     картинка при входе + XP
+  JuniperBot     https://juniper.bot   удобно, если сервер на русском
+  MEE6           https://mee6.xyz      XP на бесплатном плане ок,
+                                       почти всё остальное — Premium
+
+  Текст приветствия:
+
+  Привет, {user}. Добро пожаловать на {server}.
+  1) Прочитай #rules
+  2) Возьми роль в #roles
+  3) Напиши в #general
+
+
+══════════════════════════════════════════════════
+  6. МУЗЫКА
+══════════════════════════════════════════════════
+
+  Главный: Jockie Music
+  https://www.jockiemusic.com
+
+  Почему он:
+  • бесплатный
+  • Spotify, Apple Music, Deezer, SoundCloud, радио
+  • до 4 копий на одном сервере = 4 войса с разной музыкой
+
+  Команды:
+    m!play  название или ссылка
+    m!skip
+    m!queue
+    m!stop
+    m!invite     ← добавить Jockie 2 / 3 / 4
+
+  Запасной: FredBoat   https://fredboat.com
+  С дашбордом: Green-bot   https://green-bot.app
+  Лёгкий: Chip   (App Directory → Chip)
+
+  Ставьте ОДИН музыкальный бренд. Jockie + Chip в одном войсе =
+  две песни сразу.
+
+  Права музыке: Connect + Speak. Без Administrator.
+
+  За 5 минут:
+  1. Войс Music + текст #music-commands
+  2. Пригласить Jockie с официального сайта
+  3. Зайти в войс →  /play  или  m!play
+  4. Несколько войс-комнат с музыкой → m!invite
+
+  YouTube-ссылки у ботов в 2026 часто не играют.
+  Кидайте Spotify / Apple Music / SoundCloud.
+
+  Без бота: Discord → Настройки → Связанные аккаунты → Spotify
+  → Listen Along. Работает только если у людей Spotify Premium.
+
+
+──────────────────────────────────────────────────
+  КАРТА СЕРВЕРА ПОД БОТОВ
+──────────────────────────────────────────────────
+
+  INFO
+  #rules             правила, боты не пишут
+  #roles             Carl-bot, роли по реакциям
+  #announcements     только админы
+
+  CHAT
+  #welcome           welcome-бот
+  #general
+  #media
+  #music-commands    команды Jockie
+
+  SUPPORT
+  #support           панель Ticket Tool / Dyno
+  TICKETS            категория открытых тикетов
+  #ticket-logs       только модеры
+  #logs              Dyno / Wick, только модеры
+
+  VOICE
+  Lobby · Music · Duo · AFK
+
+
+──────────────────────────────────────────────────
+  ТИПИЧНЫЕ ОШИБКИ
+──────────────────────────────────────────────────
+
+  • Роль бота ниже роли, которую он должен выдавать
+    → реакции не работают
+  • @everyone видит #logs и категорию TICKETS
+    → приватность сломана
+  • Два тикет-бота сразу
+    → двойные тикеты
+  • Administrator у каждого бота
+    → один взлом = мёртвый сервер
+  • Фичи MEE6 Premium на бесплатном плане
+    → просто не включатся
+  • Groovy / Rythm / «бесплатный YouTube»
+    → бот мёртвый или завтра забанят
+  • Бот в войсе, звука нет
+    → нет права Speak, или вы в наушниках deafen
+  • Две песни сразу
+    → два музыкальных бота в одном войсе
+
+
+──────────────────────────────────────────────────
+  ЧЕКЛИСТ НА 15 МИНУТ
+──────────────────────────────────────────────────
+
+  [ ] Carl-bot приглашён, роль выше участников
+  [ ] Реакции в #roles выдают роль
+  [ ] Dyno пишет логи в закрытый #logs
+  [ ] Тикеты открываются из #support
+  [ ] @everyone НЕ видит TICKETS и #logs
+  [ ] Welcome приходит в #welcome
+  [ ] Jockie играет в войсе Music
+  [ ] Проверка с альта: зашёл → приветствие,
+      staff-каналы не видны
+
+
+──────────────────────────────────────────────────
+  ЧЕГО В ФАЙЛЕ НЕТ
+──────────────────────────────────────────────────
+
+  Мы не заходим в ваш Discord.
+  Мы не настраиваем ботов удалённо.
+  Мы не продаём Nitro, бусты и кастомный код.
+  Только официальные ссылки и пошаговая настройка.
+
+  Текст в [скобках] замените на свои каналы, если копируете шаблоны.
+">Копировать</button></div></article><section class="thanks"><h2>✦ Спасибо за покупку!</h2><p>Если всё получилось — подтвердите заказ на FunPay и оставьте короткий отзыв. Это очень помогает.</p><p>Что-то не открылось или непонятно — напишите в чат заказа, помогу.</p></section></main><footer>Материал носит справочный характер. Названия игр и сервисов принадлежат их правообладателям.</footer><script>document.addEventListener('click',e=>{const b=e.target.closest('.copy');if(!b)return;navigator.clipboard.writeText(b.dataset.c).then(()=>{const t=b.textContent;b.textContent='Скопировано ✓';setTimeout(()=>b.textContent=t,1400)})});</script></body></html>

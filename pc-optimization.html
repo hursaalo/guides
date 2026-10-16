@@ -1,0 +1,83 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Оптимизация ПК для игр ✦ hursaalo</title><meta name="description" content="NVIDIA + Windows: больше FPS и меньше задержка. Подходит для CS2, Valorant, GTA 5, Minecraft и других игр."><meta name="robots" content="noindex"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><header class="top"><a href="./" class="brand">✦ hursaalo</a></header><main><section class="hero"><div class="sq">🟨🟣</div><h1>Оптимизация ПК для игр</h1><p class="lead">NVIDIA + Windows: больше FPS и меньше задержка. Подходит для CS2, Valorant, GTA 5, Minecraft и других игр.</p></section><article class="guide"><h2>Полная Оптимизация Пк Для Игр 2026</h2>
+<p>NVIDIA Control Panel + Windows + Другие настройки</p>
+<p>Этот гайд даст максимум FPS и минимальный input lag.</p>
+<p>Подходит для CS2, Valorant, Apex, Fortnite, Warzone и большинства игр.</p>
+<h2>1. NVIDIA CONTROL PANEL (самое важное)</h2>
+<p>Открой NVIDIA Control Panel → Управление параметрами 3D → Глобальные параметры</p>
+<p>Выставь следующие настройки:</p>
+<ul>
+<li>Режим низкой задержки          → Ультра (для соревновательных игр) или Вкл (для обычных игр)</li>
+<li>Режим управления питанием      → Предпочтителен режим максимальной производительности</li>
+<li>Вертикальная синхронизация     → Выкл</li>
+<li>Фильтрация текстур - Качество  → Высокая производительность</li>
+<li>Размер кэша шейдеров           → 10 ГБ или Без ограничений</li>
+<li>Макс. частота кадров           → Частота монитора минус 3–5 (пример: 144 Гц → 141, 240 Гц → 235–237)</li>
+<li>Анизотропная фильтрация        → Управление приложением</li>
+<li>Сглаживание - Режим            → Управление приложением</li>
+<li>Сглаживание - FXAA             → Выкл</li>
+<li>Потоковая оптимизация          → Вкл</li>
+<li>Тройная буферизация            → Выкл</li>
+<li>OpenGL-рендеринг GPU           → твоя видеокарта</li>
+</ul>
+<p>После изменений нажми «Применить».</p>
+<p>Дополнительно:</p>
+<ul>
+<li>Если монитор поддерживает G-SYNC — включи G-SYNC + Fullscreen</li>
+<li>В играх с NVIDIA Reflex — включай Reflex + Boost в самой игре (тогда Low Latency Mode можно оставить «Выкл»)</li>
+</ul>
+<h2>2. Windows — Оптимизация Под Игры</h2>
+<ol>
+<li>План электропитания</li>
+</ol>
+<ul>
+<li>Параметры электропитания → Высокая производительность</li>
+<li>Или Ultimate Performance (скрытый план): Открой PowerShell от имени администратора и введи:</li>
+</ul>
+<div class="code"><code>powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61</code><button class="copy" data-c="powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61">Копировать</button></div>
+<p>После этого выбери Ultimate Performance</p>
+<ol>
+<li>Игровой режим Параметры → Игры → Игровой режим → Включено</li>
+</ol>
+<ol>
+<li>Xbox Game Bar Параметры → Игры → Xbox Game Bar → Выключено (съедает ресурсы)</li>
+</ol>
+<ol>
+<li>Аппаратное ускорение планирования GPU (HAGS) Параметры → Система → Дисплей → Графика → Параметры графики по умолчанию → Аппаратно-ускоренное планирование GPU → Вкл</li>
+</ol>
+<ol>
+<li>Визуальные эффекты Параметры → Система → О системе → Дополнительные параметры системы → Быстродействие → Параметры → Обеспечить наилучшее быстродействие</li>
+</ol>
+<ol>
+<li>Автозагрузка Диспетчер задач → Автозагрузка → отключи всё ненужное</li>
+</ol>
+<h2>3. Дополнительные Полезные Настройки</h2>
+<ul>
+<li>Обнови драйвер NVIDIA через GeForce Experience или сайт NVIDIA (используй чистую установку / Custom + Clean Install)</li>
+</ul>
+<ul>
+<li>В Windows Security → Безопасность устройства → Изоляция ядра → Целостность памяти Можно временно выключить для максимального FPS (даёт прирост на некоторых системах, но снижает безопасность)</li>
+</ul>
+<ul>
+<li>Отключи полноэкранную оптимизацию у .exe игры: ПКМ по ярлыку игры → Свойства → Совместимость → Отключить полноэкранную оптимизацию</li>
+</ul>
+<ul>
+<li>В BIOS (по возможности):</li>
+<li>XMP / DOCP для оперативной памяти — Вкл</li>
+<li>Resizable BAR / SAM — Вкл (если поддерживается)</li>
+</ul>
+<h2>4. КРАТКИЙ ЧЕК-ЛИСТ (сделай по порядку)</h2>
+<ul>
+<li class="chk">NVIDIA: Power Management → Maximum Performance</li>
+<li class="chk">NVIDIA: Low Latency Mode → Ultra / On</li>
+<li class="chk">NVIDIA: Texture Filtering → High Performance</li>
+<li class="chk">NVIDIA: Shader Cache → 10 GB / Unlimited</li>
+<li class="chk">Windows: План электропитания → High / Ultimate Performance</li>
+<li class="chk">Windows: Game Mode → On</li>
+<li class="chk">Windows: Xbox Game Bar → Off</li>
+<li class="chk">Windows: HAGS → On</li>
+<li class="chk">Драйвер NVIDIA обновлён</li>
+<li class="chk">В игре включён NVIDIA Reflex + Boost (если есть)</li>
+</ul>
+<p>После всех настроек перезагрузи компьютер.</p>
+<p>Разница будет особенно заметна на средних и слабых ПК.</p>
+<p>Удачной игры!</p></article><section class="thanks"><h2>✦ Спасибо за покупку!</h2><p>Если всё получилось — подтвердите заказ на FunPay и оставьте короткий отзыв. Это очень помогает.</p><p>Что-то не открылось или непонятно — напишите в чат заказа, помогу.</p></section></main><footer>Материал носит справочный характер. Названия игр и сервисов принадлежат их правообладателям.</footer><script>document.addEventListener('click',e=>{const b=e.target.closest('.copy');if(!b)return;navigator.clipboard.writeText(b.dataset.c).then(()=>{const t=b.textContent;b.textContent='Скопировано ✓';setTimeout(()=>b.textContent=t,1400)})});</script></body></html>
