@@ -1,0 +1,31 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Discord — не видит игру / чёрный экран ✦ hursaalo</title><meta name="description" content="8 решений по шагам: демонстрация, звук, ноутбуки."><meta name="robots" content="noindex"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><header class="top"><a href="./" class="brand">✦ hursaalo</a></header><main><section class="hero"><div class="sq">🟦🟣</div><h1>Discord — не видит игру / чёрный экран</h1><p class="lead">8 решений по шагам: демонстрация, звук, ноутбуки.</p></section><article class="guide"><p>Иди по шагам сверху вниз. После каждого шага проверяй, помогло ли.</p>
+<h2>1. Добавь игру вручную</h2>
+<p>Настройки пользователя → <b>Зарегистрированные игры</b> (Activity Privacy / Registered Games) → «Добавить» → выбери процесс игры. Включи значок оверлея рядом с ней.</p>
+<h2>2. Запусти Discord и игру с одинаковыми правами</h2>
+<p>Если игра запущена от администратора, а Discord нет (или наоборот) — Discord её не видит.</p>
+<p>Закрой Discord полностью (значок в трее → Выйти) и запусти <b>оба</b> одинаково: оба обычно или оба «От имени администратора».</p>
+<h2>3. Переключи аппаратное ускорение</h2>
+<p>Настройки → <b>Дополнительно</b> → «Аппаратное ускорение» — выключи (если было включено) или включи (если было выключено). Discord перезапустится.</p>
+<h2>4. Окно вместо полного экрана</h2>
+<p>Чёрный экран в демонстрации чаще всего из-за <b>эксклюзивного полноэкранного</b> режима. В настройках игры поставь <b>«Полноэкранный в окне» / Borderless</b>.</p>
+<h2>5. Ноутбук с двумя видеокартами</h2>
+<p>Чёрный экран на ноутбуке = Discord и игра работают на разных видеокартах.</p>
+<p>Параметры Windows → Система → Дисплей → <b>Графика</b> → добавь Discord.exe и игру → для обоих одинаковый вариант (лучше «Высокая производительность»).</p>
+<p>Discord.exe лежит в <code>%LocalAppData%\Discord\app-x.x.xxxx\</code>.</p>
+<h2>6. Кодек и захват</h2>
+<p>Настройки → <b>Голос и видео</b> → раздел «Видеокодек» / «Демонстрация экрана»:</p>
+<ul>
+<li>переключи «Использовать новейшую технологию для захвата экрана» (вкл ↔ выкл);</li>
+<li>выключи «Аппаратное ускорение H.264», если включено.</li>
+</ul>
+<h2>7. Звука из игры нет в стриме</h2>
+<p>Discord передаёт звук только у демонстрации <b>окна приложения</b>, не всего экрана (на старых версиях Windows). Выбирай в демонстрации именно окно игры.</p>
+<h2>8. Ничего не помогло — чистая переустановка</h2>
+<ol>
+<li>Удали Discord через «Приложения».</li>
+<li>Нажми Win+R → <code>%AppData%</code> → удали папку <b>discord</b>.</li>
+<li>Win+R → <code>%LocalAppData%</code> → удали папку <b>Discord</b>.</li>
+<li>Скачай Discord заново с discord.com.</li>
+</ol>
+<p>В 9 случаях из 10 помогает шаг 2, 4 или 5.</p>
+</article><section class="thanks"><h2>✦ Спасибо за покупку!</h2><p>Если всё получилось — подтвердите заказ на FunPay и оставьте короткий отзыв. Это очень помогает.</p><p>Что-то не открылось или непонятно — напишите в чат заказа, помогу.</p></section></main><footer>Материал носит справочный характер. Названия игр и сервисов принадлежат их правообладателям.</footer><script>document.addEventListener('click',e=>{const b=e.target.closest('.copy');if(!b)return;navigator.clipboard.writeText(b.dataset.c).then(()=>{const t=b.textContent;b.textContent='Скопировано ✓';setTimeout(()=>b.textContent=t,1400)})});</script></body></html>
