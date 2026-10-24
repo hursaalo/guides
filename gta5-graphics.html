@@ -1,0 +1,49 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GTA 5 / FiveM — красивая графика бесплатно hursaalo</title><meta name="description" content="ReShade-рецепт, настройки, что можно на RP."><meta name="robots" content="noindex"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Caveat:wght@700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><header class="top"><a href="./" class="brand">hursaalo</a></header><main><section class="hero"><div class="sq">🟩🟣</div><h1>GTA 5 / FiveM — красивая графика бесплатно</h1><p class="lead">ReShade-рецепт, настройки, что можно на RP.</p></section><article class="guide"><p>Как сделать картинку «как на ютубе» без платных паков, и не уронить FPS в RP.</p>
+<h2>1. Сначала FPS — базовые настройки</h2>
+<p>Настройки → Графика:</p>
+<ul>
+<li><b>Версия DirectX:</b> 11 (в GTA 5 Enhanced — DirectX 12).</li>
+<li><b>MSAA:</b> Выкл, <b>FXAA:</b> Вкл.</li>
+<li><b>Плотность населения и разнообразие:</b> 50–70%.</li>
+<li><b>Качество теней:</b> Высокое, <b>Мягкие тени:</b> «Мягко».</li>
+<li><b>Качество травы:</b> Нормальное — это главный пожиратель FPS.</li>
+<li><b>Постобработка:</b> Высокая, <b>Эффекты боке и размытия:</b> Выкл.</li>
+<li>Расширенная графика → <b>Длинные тени, Высокая детализация теней:</b> Выкл.</li>
+</ul>
+<h2>2. ReShade — фильтр цветокоррекции (бесплатно)</h2>
+<ol>
+<li>Скачай с <b>reshade.me</b> (официальный сайт) → установи → выбери <code>GTA5.exe</code> (для FiveM — <code>FiveM_GTAProcess.exe</code> / путь в настройках FiveM) → <b>DirectX 10/11/12</b>.</li>
+<li>Выбери пакеты эффектов: <b>Standard effects</b> и <b>SweetFX</b>.</li>
+<li>В игре нажми <b>Home</b> → откроется меню ReShade.</li>
+<li>Включи эффекты (рецепт «чистая сочная картинка»):</li>
+</ol>
+<ul>
+<li><b>LumaSharpen</b> — сила 0.6 (резкость).</li>
+<li><b>Vibrance</b> — 0.15–0.25 (сочность цвета).</li>
+<li><b>Curves</b> — контраст 0.10.</li>
+<li><b>Tonemap</b> — Exposure 0.00, Saturation 0.05.</li>
+</ul>
+<ol>
+<li>Внизу меню — сохрани пресет. Клавиша <b>Scroll Lock</b> включает/выключает фильтр (сравнить до/после).</li>
+</ol>
+<ul>
+<li>Каждый эффект ест 1–5% FPS. Больше 4–5 эффектов не включай.</li>
+</ul>
+<h2>3. FiveM: что можно, а что нет</h2>
+<ul>
+<li>ReShade на большинстве RP-серверов <b>разрешён</b>. Запрещены: удалённые деревья/кусты («грасс-фикс»), изменённые timecycle с ночным видением — дают преимущество, за это банят.</li>
+<li>Любые графические моды в FiveM — только если они прямо разрешены в правилах сервера.</li>
+<li>FiveM → Настройки → <b>Use custom game build</b>: не трогай без нужды.</li>
+</ul>
+<h2>4. Готовые бесплатные моды графики (одиночка, не FiveM)</h2>
+<ul>
+<li><b>VisualV</b> — бесплатный мод графики (gta5-mods.com) — улучшает погоду, небо и свет, лёгкий.</li>
+<li><b>NaturalVision Evolved</b> и <b>QuantV</b> — платные. Не ставь их «бесплатные» сливы: там часто вирусы.</li>
+<li>Моды ставятся через <b>OpenIV</b> (openiv.com) в папку <code>mods</code> — оригинальные файлы не трогай.</li>
+</ul>
+<h2>5. Если стало хуже</h2>
+<ul>
+<li>Удали <code>dxgi.dll</code> (или <code>d3d11.dll</code>) и папку <code>reshade-shaders</code> из папки игры — ReShade полностью исчезнет.</li>
+<li>Проверь файлы игры в Steam / Rockstar Launcher / Epic.</li>
+</ul>
+</article><section class="thanks"><h2>✦ Спасибо за покупку!</h2><p>Если всё получилось — подтвердите заказ на FunPay и оставьте короткий отзыв. Это очень помогает.</p><p>Что-то не открылось или непонятно — напишите в чат заказа, помогу.</p></section></main><footer>Материал носит справочный характер. Названия игр и сервисов принадлежат их правообладателям.</footer><script>document.addEventListener('click',e=>{const b=e.target.closest('.copy');if(!b)return;navigator.clipboard.writeText(b.dataset.c).then(()=>{const t=b.textContent;b.textContent='Скопировано ✓';setTimeout(()=>b.textContent=t,1400)})});</script></body></html>
