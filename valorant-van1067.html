@@ -1,0 +1,48 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Valorant — ошибка VAN 1067 / TPM 2.0 hursaalo</title><meta name="description" content="TPM и Secure Boot в BIOS по шагам для Intel и AMD."><meta name="robots" content="noindex"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Caveat:wght@700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><header class="top"><a href="./" class="brand">hursaalo</a></header><main><section class="hero"><div class="sq">🟥🟣</div><h1>Valorant — ошибка VAN 1067 / TPM 2.0</h1><p class="lead">TPM и Secure Boot в BIOS по шагам для Intel и AMD.</p></section><article class="guide"><h2>Что это за ошибка</h2>
+<ul>
+<li><b>VAN 1067</b> — античит Vanguard на Windows 11 требует включённые <b>TPM 2.0</b> и <b>Secure Boot</b> (безопасную загрузку).</li>
+<li>Игра не запустится, пока оба пункта не включены в BIOS. Переустановка игры здесь не поможет.</li>
+</ul>
+<h2>Шаг 1. Проверь, что сейчас включено</h2>
+<ol>
+<li>Win + R → <code>msinfo32</code> → Enter.</li>
+<li>Найди строку <b>«Состояние безопасной загрузки»</b>: нужно «Вкл.».</li>
+<li>Win + R → <code>tpm.msc</code> → Enter. Должно быть «TPM готов к использованию», версия спецификации <b>2.0</b>.</li>
+<li>Если оба пункта уже включены — сразу переходи к шагу 4.</li>
+</ol>
+<h2>Шаг 2. Включи TPM в BIOS</h2>
+<ol>
+<li>Перезагрузи ПК и жми <b>Del</b> (на ноутбуках часто <b>F2</b>), пока не откроется BIOS.</li>
+<li>Включи <b>Advanced Mode</b> (обычно клавиша F7).</li>
+<li>Найди TPM — он называется по-разному:</li>
+</ol>
+<ul>
+<li>Intel: <b>PTT</b> (Intel Platform Trust Technology) → Enabled.</li>
+<li>AMD: <b>fTPM</b> (AMD fTPM switch) → Firmware TPM / Enabled.</li>
+</ul>
+<ol>
+<li>Где искать: MSI — Settings → Security → Trusted Computing; ASUS — Advanced → PCH-FW Configuration или AMD fTPM; Gigabyte — Settings → Miscellaneous.</li>
+</ol>
+<h2>Шаг 3. Включи Secure Boot</h2>
+<ol>
+<li>В BIOS: вкладка <b>Boot</b> → <b>CSM</b> (Compatibility Support Module) → <b>Disabled</b>. Без этого Secure Boot не включится.</li>
+<li><b>Secure Boot</b> → Enabled. Если просит ключи — выбери <b>Install default keys / Restore Factory Keys</b>.</li>
+<li>F10 → сохранить и перезагрузиться.</li>
+</ol>
+<ul>
+<li><b>Важно:</b> отключать CSM безопасно, только если Windows стоит на диске <b>GPT</b>. Проверка: Win + X → «Управление дисками» → ПКМ по диску → Свойства → Тома → «Стиль раздела». Если там <b>MBR</b> — сначала конвертируй: в командной строке от администратора <code>mbr2gpt /validate /allowFullOS</code>, затем <code>mbr2gpt /convert /allowFullOS</code>. Без этого система не загрузится.</li>
+</ul>
+<h2>Шаг 4. Если всё включено, а ошибка осталась</h2>
+<ol>
+<li>Win + R → <code>services.msc</code> → найди <b>vgc</b> → «Тип запуска» → <b>Автоматически</b> → Запустить.</li>
+<li>Перезагрузи ПК (Vanguard стартует только при загрузке Windows).</li>
+<li>Удали Riot Vanguard через «Приложения», перезагрузись, запусти Valorant — он сам переустановит античит.</li>
+<li>Обнови BIOS с сайта производителя материнки, если TPM в нём не находится вообще.</li>
+</ol>
+<h2>Частые вопросы</h2>
+<ul>
+<li><b>Ошибка VAN 9001</b> — то же самое, решается теми же шагами.</li>
+<li><b>Слетела ли Windows после включения?</b> Нет, если диск GPT. Файлы не трогаются.</li>
+<li><b>На Windows 10 нужно?</b> Нет, там TPM и Secure Boot для Vanguard не обязательны — ищи другую причину (шаг 4).</li>
+</ul>
+</article><section class="thanks"><h2>✦ Спасибо за покупку!</h2><p>Если всё получилось — подтвердите заказ на FunPay и оставьте короткий отзыв. Это очень помогает.</p><p>Что-то не открылось или непонятно — напишите в чат заказа, помогу.</p></section></main><footer>Материал носит справочный характер. Названия игр и сервисов принадлежат их правообладателям.</footer><script>document.addEventListener('click',e=>{const b=e.target.closest('.copy');if(!b)return;navigator.clipboard.writeText(b.dataset.c).then(()=>{const t=b.textContent;b.textContent='Скопировано ✓';setTimeout(()=>b.textContent=t,1400)})});</script></body></html>

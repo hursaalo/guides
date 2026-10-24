@@ -1,0 +1,43 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>WhatsApp — вернуть удалённые чаты hursaalo</title><meta name="description" content="Google Диск, локальная копия, iCloud."><meta name="robots" content="noindex"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Caveat:wght@700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><header class="top"><a href="./" class="brand">hursaalo</a></header><main><section class="hero"><div class="sq">🟩🟣</div><h1>WhatsApp — вернуть удалённые чаты</h1><p class="lead">Google Диск, локальная копия, iCloud.</p></section><article class="guide"><h2>Главное правило</h2>
+<ul>
+<li>WhatsApp <b>не хранит переписку на своих серверах</b>. Вернуть можно только из <b>резервной копии</b>: Google Диск (Android) или iCloud (iPhone), либо локальной копии на Android.</li>
+<li>Проверь, есть ли копия: WhatsApp → Настройки → Чаты → <b>Резервная копия чатов</b> — там дата последней копии.</li>
+</ul>
+<h2>Android: восстановление из Google Диска</h2>
+<ol>
+<li>Убедись, что копия была сделана <b>раньше, чем ты удалил сообщения</b> (иначе их там нет).</li>
+<li>Удали WhatsApp (или очисти данные приложения) → установи заново.</li>
+<li>Войди с <b>тем же номером</b> и тем же Google-аккаунтом на телефоне.</li>
+<li>На экране «Найдена резервная копия» → <b>«Восстановить»</b>. Не нажимай «Пропустить» — второго шанса не будет до переустановки.</li>
+</ol>
+<h2>Android: локальная копия (если Google Диска нет)</h2>
+<ul>
+<li>WhatsApp каждую ночь в 2:00 сохраняет копию в память телефона: <b>Android/media/com.whatsapp/WhatsApp/Databases</b>.</li>
+<li>Файлы: <code>msgstore.db.crypt14</code> (последняя) и <code>msgstore-ГГГГ-ММ-ДД.1.db.crypt14</code> (за 7 прошлых дней).</li>
+</ul>
+<ol>
+<li>Нужная дата раньше удаления → переименуй этот файл в <code>msgstore.db.crypt14</code> (старый сначала скопируй в сторону).</li>
+<li>Переустанови WhatsApp, войди — предложит восстановить из локальной копии.</li>
+</ol>
+<h2>iPhone: восстановление из iCloud</h2>
+<ol>
+<li>Настройки iPhone → [твоё имя] → iCloud → iCloud Drive включён.</li>
+<li>Удали WhatsApp → установи → войди с тем же номером → <b>«Восстановить из копии»</b>.</li>
+</ol>
+<h2>Перенос на новый телефон</h2>
+<ul>
+<li>Android → Android: просто войди тем же номером и Google-аккаунтом — подтянет копию с Диска.</li>
+<li>Android ↔ iPhone: Настройки WhatsApp → Чаты → <b>Перенос чатов</b> (нужны оба телефона рядом и одна Wi-Fi сеть).</li>
+</ul>
+<h2>Если копии нет</h2>
+<ul>
+<li>Удалённое у тебя сообщение может быть <b>у собеседника</b> — попроси переслать или экспортировать чат (Чат → ⋮ → Ещё → Экспорт чата).</li>
+<li>Фото/видео ищи в галерее: папка <b>WhatsApp Images / WhatsApp Video</b> часто остаётся, даже если чат удалён.</li>
+<li>Программы «восстановить удалённое WhatsApp без копии» за деньги в 99% случаев не работают — не плати.</li>
+</ul>
+<h2>Чтобы больше не терять</h2>
+<ul>
+<li>Настройки → Чаты → Резервная копия → частота <b>«Ежедневно»</b>, включи «Добавлять видео» при необходимости.</li>
+<li>Включи <b>зашифрованную копию</b> и запомни пароль — без него её не восстановить.</li>
+</ul>
+</article><section class="thanks"><h2>✦ Спасибо за покупку!</h2><p>Если всё получилось — подтвердите заказ на FunPay и оставьте короткий отзыв. Это очень помогает.</p><p>Что-то не открылось или непонятно — напишите в чат заказа, помогу.</p></section></main><footer>Материал носит справочный характер. Названия игр и сервисов принадлежат их правообладателям.</footer><script>document.addEventListener('click',e=>{const b=e.target.closest('.copy');if(!b)return;navigator.clipboard.writeText(b.dataset.c).then(()=>{const t=b.textContent;b.textContent='Скопировано ✓';setTimeout(()=>b.textContent=t,1400)})});</script></body></html>

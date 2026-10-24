@@ -1,0 +1,28 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Windows — диск загружен на 100% hursaalo</title><meta name="description" content="Найти виновника и убрать тормоза."><meta name="robots" content="noindex"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Caveat:wght@700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><header class="top"><a href="./" class="brand">hursaalo</a></header><main><section class="hero"><div class="sq">🟩🟣</div><h1>Windows — диск загружен на 100%</h1><p class="lead">Найти виновника и убрать тормоза.</p></section><article class="guide"><h2>Найди виновника (1 минута)</h2>
+<ol>
+<li>Ctrl + Shift + Esc → Диспетчер задач → «Процессы» → нажми на столбец <b>«Диск»</b>, чтобы отсортировать.</li>
+<li>Кто сверху — тот и грузит. Дальше по пунктам ниже.</li>
+</ol>
+<h2>Частые причины и решения</h2>
+<ol>
+<li><b>Обновления Windows</b> (Windows Update, «Узел службы») — дай доделать 20–40 минут и перезагрузи. Потом: Параметры → Центр обновления → «Приостановить» на неделю, если мешает играть.</li>
+<li><b>SysMain (Superfetch)</b> — Win + R → <code>services.msc</code> → SysMain → Тип запуска «Отключена» → Остановить. На HDD часто сразу снижает нагрузку.</li>
+<li><b>Windows Search (индексирование)</b> — то же: services.msc → «Windows Search» → Отключена. Поиск в меню станет чуть медленнее.</li>
+<li><b>Антивирус</b> (Защитник: «Antimalware Service Executable») — проверка идёт в фоне. Добавь папку с играми в исключения: Безопасность Windows → Защита от вирусов → Параметры → Исключения.</li>
+<li><b>Автозагрузка</b> — Диспетчер задач → «Автозагрузка» → отключи всё ненужное (лаунчеры, торренты, обновлятели).</li>
+<li><b>Torrent-клиент или Steam качает</b> — проверь, не идёт ли загрузка.</li>
+<li><b>Файл подкачки</b> — если мало ОЗУ (8 ГБ и меньше), диск грузит подкачка. Закрой браузер с кучей вкладок; решение надолго — добавить памяти.</li>
+</ol>
+<h2>Проверь сам диск</h2>
+<ol>
+<li>Командная строка от администратора → <code>chkdsk C: /scan</code>.</li>
+<li>Скачай <b>CrystalDiskInfo</b> (бесплатно, crystalmark.info) → состояние «Хорошо» — норм, «Тревога» или «Плохо» — диск умирает, <b>срочно сохрани файлы</b>.</li>
+<li>Если стоит <b>HDD</b> под системой — 100% диска это его потолок. Лучшее решение — <b>SSD</b> (от 2–3 тыс. ₽ за 256–512 ГБ), ускорение в разы.</li>
+</ol>
+<h2>Быстрые доп. действия</h2>
+<ul>
+<li>Win + R → <code>cleanmgr</code> → Очистка системных файлов.</li>
+<li>Параметры → Система → Питание → режим <b>«Максимальная производительность»</b>.</li>
+<li>Перезагрузка, а не «Завершение работы» — с включённым быстрым запуском Windows полностью не перезапускается.</li>
+</ul>
+</article><section class="thanks"><h2>✦ Спасибо за покупку!</h2><p>Если всё получилось — подтвердите заказ на FunPay и оставьте короткий отзыв. Это очень помогает.</p><p>Что-то не открылось или непонятно — напишите в чат заказа, помогу.</p></section></main><footer>Материал носит справочный характер. Названия игр и сервисов принадлежат их правообладателям.</footer><script>document.addEventListener('click',e=>{const b=e.target.closest('.copy');if(!b)return;navigator.clipboard.writeText(b.dataset.c).then(()=>{const t=b.textContent;b.textContent='Скопировано ✓';setTimeout(()=>b.textContent=t,1400)})});</script></body></html>
