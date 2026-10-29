@@ -1,0 +1,57 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Valorant / LoL — клиент Riot не запускается hursaalo</title><meta name="description" content="Зависает на обновлении, нет соединения, Vanguard, переустановка."><meta name="robots" content="noindex"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Caveat:wght@700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><header class="top"><a href="./" class="brand">hursaalo</a></header><main><section class="hero"><div class="sq">🟥🟣</div><h1>Valorant / LoL — клиент Riot не запускается</h1><p class="lead">Зависает на обновлении, нет соединения, Vanguard, переустановка.</p></section><article class="guide"><p>Если Riot Client висит на «Обновление», пишет «не удалось подключиться», Valorant вылетает на старте или не пускает в аккаунт — вот порядок действий. Проверено на типовых причинах, без читов и сторонних программ.</p>
+<h2>0. Массовый сбой?</h2>
+<p>Бывает, что серверы Riot недоступны у многих игроков одновременно (так было 25–26 октября 2026). Если в чатах и сообществах игры у людей то же самое — <b>подожди 30–60 минут</b>, не переустанавливай игру: это не поможет.</p>
+<h2>1. Простые шаги</h2>
+<ol>
+<li>Полностью закрой Riot Client: диспетчер задач (Ctrl+Shift+Esc) → заверши <code>RiotClientServices.exe</code>, <code>RiotClientUx.exe</code>, <code>VALORANT.exe</code>, <code>LeagueClient.exe</code>.</li>
+<li>Запусти Riot Client <b>от имени администратора</b>.</li>
+<li>Перезагрузи роутер на 30 секунд и ПК.</li>
+<li>Отключи оверлеи и антивирусы с «играми» на время проверки, если они есть.</li>
+</ol>
+<h2>2. Клиент завис на обновлении</h2>
+<ol>
+<li>Закрой клиент.</li>
+<li>Удали папку кэша: Win+R → <code>%localappdata%\Riot Games\Riot Client\Data</code> → удали содержимое <b>папки Data</b> (не всю папку Riot Games).</li>
+<li>Запусти клиент снова — он скачает данные заново.</li>
+<li>Если не помогло: Win+R → <code>%programdata%\Riot Games</code> → удали <b>только</b> папку <code>Metadata</code> (потом клиент создаст её сам).</li>
+</ol>
+<h2>3. «Не удалось подключиться» / сетевые ошибки</h2>
+<ul>
+<li>Сбрось сеть Windows (командная строка от администратора): <code>ipconfig /flushdns</code>, <code>netsh winsock reset</code>, <code>netsh int ip reset</code>, перезагрузка.</li>
+<li>Смени DNS на <code>8.8.8.8</code> / <code>8.8.4.4</code> или <code>1.1.1.1</code> / <code>1.0.0.1</code> (Параметры → Сеть → Свойства оборудования → DNS вручную).</li>
+<li>Подключись кабелем или поближе к роутеру, закрой торренты и загрузки.</li>
+</ul>
+<h2>4. Valorant не стартует (VAN, vgc)</h2>
+<ul>
+<li>Ошибка <b>VAN 1067</b> — нужна включённая <b>TPM 2.0 и Secure Boot</b>, смотри наш гайд «Valorant — ошибка VAN 1067».</li>
+<li>Антиочит Vanguard: Win+R → <code>services.msc</code> → найди <b>vgc</b> → тип запуска «Автоматически» → запустить. Если службы нет — переустанови Vanguard через клиент.</li>
+<li>Перезагрузи ПК: Vanguard должен стартовать при загрузке Windows.</li>
+</ul>
+<h2>5. Не пускает в аккаунт</h2>
+<ul>
+<li>Проверь логин и пароль на сайте Riot через браузер. Если там тоже ошибка — проблема в аккаунте, а не в клиенте.</li>
+<li>Включи двухфакторную проверку и убедись, что почта доступна: коды приходят туда.</li>
+<li>Если пишет про блокировку — открой письмо от Riot, не вводи данные на сторонних сайтах.</li>
+</ul>
+<h2>6. Переустановка (последний шаг)</h2>
+<ol>
+<li>Удали Riot Client и Valorant через «Приложения».</li>
+<li>Удали остатки: <code>C:\Riot Games</code> и <code>%localappdata%\Riot Games</code>.</li>
+<li>Установи заново <b>только с официального сайта Riot</b>.</li>
+</ol>
+<h2>Что НЕ делать</h2>
+<ul>
+<li>Не качай «исправления» и «ускорители» с неизвестных сайтов — это вирусы и риск бана.</li>
+<li>Не используй сторонние программы для обхода блокировок без понимания, что делаешь: они могут не работать и ставят аккаунт под риск. Мы не рекомендуем конкретные сервисы.</li>
+<li>Не вводи данные аккаунта на подозрительных страницах.</li>
+</ul>
+<h2>Памятка</h2>
+<ol>
+<li>Массовый сбой → подожди.</li>
+<li>Закрой процессы и запусти от администратора.</li>
+<li>Очисти Data и Metadata.</li>
+<li>Сброс сети и DNS.</li>
+<li>vgc и TPM для Valorant.</li>
+<li>Переустановка с официального сайта.</li>
+</ol>
+</article><section class="thanks"><h2>✦ Спасибо за покупку!</h2><p>Если всё получилось — подтвердите заказ на FunPay и оставьте короткий отзыв. Это очень помогает.</p><p>Что-то не открылось или непонятно — напишите в чат заказа, помогу.</p></section></main><footer>Материал носит справочный характер. Названия игр и сервисов принадлежат их правообладателям.</footer><script>document.addEventListener('click',e=>{const b=e.target.closest('.copy');if(!b)return;navigator.clipboard.writeText(b.dataset.c).then(()=>{const t=b.textContent;b.textContent='Скопировано ✓';setTimeout(()=>b.textContent=t,1400)})});</script></body></html>

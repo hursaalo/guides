@@ -1,0 +1,53 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fortnite — бесконечная загрузка и высокий пинг hursaalo</title><meta name="description" content="Лаунчер, кэш, сеть, регион матчмейкинга."><meta name="robots" content="noindex"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Caveat:wght@700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><header class="top"><a href="./" class="brand">hursaalo</a></header><main><section class="hero"><div class="sq">🟦🟣</div><h1>Fortnite — бесконечная загрузка и высокий пинг</h1><p class="lead">Лаунчер, кэш, сеть, регион матчмейкинга.</p></section><article class="guide"><p>Fortnite висит на загрузке, лобби не открывается, пинг скачет или пишет «нет соединения». Идём от самого простого. Без читов и сторонних программ.</p>
+<h2>0. Массовый сбой?</h2>
+<p>Иногда серверы Epic Games недоступны сразу у многих. Если в сообществах игры жалуются одновременно — <b>подожди 30–60 минут</b>. Не переустанавливай игру на пустом месте.</p>
+<h2>1. Базовые шаги</h2>
+<ol>
+<li>Закрой Epic Games Launcher и Fortnite полностью: диспетчер задач → завершить <code>EpicGamesLauncher.exe</code>, <code>FortniteClient-Win64-Shipping.exe</code>, <code>EpicWebHelper.exe</code>.</li>
+<li>Запусти лаунчер <b>от имени администратора</b>.</li>
+<li>Перезагрузи роутер на 30 секунд, потом ПК.</li>
+<li>Проверь, что дата и время в Windows верные (автоматически): неверные часы ломают соединение.</li>
+</ol>
+<h2>2. Лаунчер: проверить файлы</h2>
+<p>В Epic Games Launcher: Библиотека → Fortnite → три точки → <b>Управление</b> → <b>Проверить</b>. Лаунчер сам докачает повреждённые файлы.</p>
+<h2>3. Очистить кэш лаунчера</h2>
+<ol>
+<li>Закрой лаунчер.</li>
+<li>Win+R → <code>%localappdata%\EpicGamesLauncher\Saved</code> → удали папки <b>webcache</b> (и <code>webcache_4147</code>, если есть).</li>
+<li>Запусти лаунчер заново.</li>
+</ol>
+<p>Игры и аккаунт при этом не затрагиваются.</p>
+<h2>4. Сеть</h2>
+<ul>
+<li>Сбрось сеть Windows (командная строка от администратора): <code>ipconfig /flushdns</code>, <code>netsh winsock reset</code>, <code>netsh int ip reset</code> → перезагрузка.</li>
+<li>Смени DNS на <code>8.8.8.8</code> / <code>8.8.4.4</code> или <code>1.1.1.1</code> / <code>1.0.0.1</code>.</li>
+<li>Подключись кабелем, закрой торренты и загрузки, отключи VPN, если он включён и тормозит.</li>
+<li>Частые причины «бесконечной загрузки»: нестабильный Wi-Fi, потери пакетов у провайдера.</li>
+</ul>
+<h2>5. Высокий пинг</h2>
+<ul>
+<li>В Fortnite: Настройки → Игра → <b>Регион матчмейкинга</b> — выбери ближайший (Европа вместо Азии/США).</li>
+<li>Закрой фоновые загрузки и стриминг.</li>
+<li>Если лагает только вечером — это перегрузка сети провайдера, позвони им и скажи про потери пакетов.</li>
+</ul>
+<h2>6. Проблемы после обновления</h2>
+<ul>
+<li>Нет места на диске: Fortnite требует десятки гигабайт на обновление; освободи место.</li>
+<li>Обновление «зависло»: закрой лаунчер, удали <code>webcache</code>, запусти снова.</li>
+<li>Антивирус блокирует: добавь папку Fortnite и лаунчера в исключения (только если уверен в источнике установки).</li>
+</ul>
+<h2>7. Если не помогает</h2>
+<ul>
+<li>Переустанови Epic Games Launcher <b>только с официального сайта</b>.</li>
+<li>Не вводи данные аккаунта Epic на сторонних сайтах «ускорителей» и не качай «фиксы» с неизвестных ресурсов.</li>
+<li>Если аккаунт взломан или не пускает — смени пароль на официальном сайте и включи двухфакторную защиту.</li>
+</ul>
+<h2>Памятка</h2>
+<ol>
+<li>Массовый сбой → подожди.</li>
+<li>Закрой всё, запусти от администратора.</li>
+<li>Проверь файлы и очисти webcache.</li>
+<li>Сбрось сеть, смени DNS.</li>
+<li>Регион матчмейкинга — ближайший.</li>
+</ol>
+</article><section class="thanks"><h2>✦ Спасибо за покупку!</h2><p>Если всё получилось — подтвердите заказ на FunPay и оставьте короткий отзыв. Это очень помогает.</p><p>Что-то не открылось или непонятно — напишите в чат заказа, помогу.</p></section></main><footer>Материал носит справочный характер. Названия игр и сервисов принадлежат их правообладателям.</footer><script>document.addEventListener('click',e=>{const b=e.target.closest('.copy');if(!b)return;navigator.clipboard.writeText(b.dataset.c).then(()=>{const t=b.textContent;b.textContent='Скопировано ✓';setTimeout(()=>b.textContent=t,1400)})});</script></body></html>
