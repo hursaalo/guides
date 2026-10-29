@@ -1,0 +1,58 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CS2 — новые прицелы после обновления hursaalo</title><meta name="description" content="Коды про-игроков с датами, как ввести и ручная настройка."><meta name="robots" content="noindex"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Caveat:wght@700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><header class="top"><a href="./" class="brand">hursaalo</a></header><main><section class="hero"><div class="sq">🟨🟣</div><h1>CS2 — новые прицелы после обновления</h1><p class="lead">Коды про-игроков с датами, как ввести и ручная настройка.</p></section><article class="guide"><p>После осенних обновлений CS2 <b>старые коды прицела формата <code>CSGO-…</code> больше не работают</b>. Новый код начинается на <b>CS</b> и состоит из 46 символов. Здесь — как его ввести, свежие коды с датами и как собрать такой прицел вручную, если код не принялся.</p>
+<h2>Как ввести код</h2>
+<ol>
+<li>Запусти CS2. Включи консоль: Настройки → Игра → «Включить консоль разработчика» → Да. Открывается клавишей <b>~</b> (Ё).</li>
+<li>Скопируй код целиком (все 46 символов, без пробелов в начале и конце).</li>
+<li>В консоли введи: <code>apply_crosshair_code КОД</code> и нажми Enter.</li>
+<li>Проверь прицел в тренировочной карте: Настройки → Игра → Прицел (там он виден в окне предпросмотра).</li>
+<li>Чтобы сохранить на другие режимы/аккаунты, прицел можно записать в <code>autoexec.cfg</code> командами из раздела «Ручная настройка» ниже.</li>
+</ol>
+<p>&gt; <b>Честно:</b> я не могу проверить код прямо в игре в момент продажи. Коды взяты со страниц с указанной датой, но игра обновляется. <b>Если код не принимается — настрой прицел вручную</b>, это 2 минуты.</p>
+<h2>Свежие коды про-игроков (с датами)</h2>
+<ul>
+<li><b>ZywOo</b> (на 24.10.2026): <code>CS6bn6bJeOmmd35ur7m83TdDtmCPucSTUjz3hSNuwJMiyE</code></li>
+<li><b>donk</b> (на 24.10.2026): <code>CSntztNWLLatMptL4XWsMWDEW3nSjM7tSVzh4wFAEo2QVQ</code></li>
+<li><b>s1mple</b> (на 19.10.2026): <code>CS7S8BZh7rUZEzFuWuFHW6NC77rJidQWQQwPwqTTJtjhPn</code></li>
+<li><b>molodoy</b> (на 06.10.2026): <code>CSikVAyUW5jWMvoSsVELW4Ca5mhz2G4WBYPAv75NDjhRfJ</code></li>
+</ul>
+<p>Про-игроки меняют прицелы: дата рядом с кодом — это дата, когда мы его проверяли. Если код с более ранней датой не подходит или уже не такой, как у игрока, — не страшно, он всё равно рабочий как любой готовый прицел; выбери по вкусу.</p>
+<h2>Какой прицел выбрать</h2>
+<ul>
+<li><b>Маленький с точкой</b> (как у donk по описанию: малый размер, точка, зелёный) — хорошо для точных попаданий в голову, мало закрывает цель.</li>
+<li><b>Классический крест с зазором</b> — привычный для CS:GO, удобен для спрея и стрельбы на дистанции.</li>
+<li>Цвет: зелёный или голубой лучше видны на большинстве карт; красный теряется на красных текстурах.</li>
+</ul>
+<h2>Ручная настройка нового прицела</h2>
+<p>Введи в консоли (меняй числа под себя):</p>
+<ul>
+<li><code>cl_crosshairstyle 4</code></li>
+<li><code>cl_crosshairsize 2</code></li>
+<li><code>cl_crosshairthickness 1</code></li>
+<li><code>cl_crosshairgap -2</code></li>
+<li><code>cl_crosshairdot 0</code></li>
+<li><code>cl_crosshair_drawoutline 1</code></li>
+<li><code>cl_crosshair_outlinethickness 1</code></li>
+<li><code>cl_crosshaircolor 1</code></li>
+<li><code>cl_crosshairalpha 255</code></li>
+</ul>
+<p>Что за что отвечает:</p>
+<ul>
+<li><code>cl_crosshairstyle 4</code> — классический статичный прицел (не «расходится» при стрельбе). <code>5</code> — динамичный.</li>
+<li><code>cl_crosshairsize</code> — длина линий. Начни с 2–3.</li>
+<li><code>cl_crosshairthickness</code> — толщина. Начни с 1.</li>
+<li><code>cl_crosshairgap</code> — зазор в центре. Отрицательное число сводит линии ближе (-2…-3 — «плотный» прицел).</li>
+<li><code>cl_crosshairdot 1</code> — включить точку по центру.</li>
+<li><code>cl_crosshair_drawoutline 1</code> — чёрная обводка, прицел виден на любом фоне.</li>
+<li><code>cl_crosshaircolor</code>: 0 красный, 1 зелёный, 2 жёлтый, 3 синий, 4 голубой, 5 свой цвет (тогда ещё задай <code>cl_crosshaircolor_r/g/b</code>).</li>
+</ul>
+<p>Это отправная точка: подгоняй размер и зазор в тренировочной карте, пока цель не перестанет закрываться.</p>
+<h2>Сохранить прицел насовсем</h2>
+<p>Добавь эти команды в файл <code>autoexec.cfg</code> (папка <code>game\csgo\cfg</code> в CS2) — они применяются при каждом запуске. Если у тебя уже есть конфиг для CS2, смотри отдельный гайд «CS2 CFG».</p>
+<h2>Если не получилось</h2>
+<ul>
+<li>«Unknown command» — консоль не включена (шаг 1) или команда введена с опечаткой.</li>
+<li>Код не принимается — проверь, что в начале стоит именно <code>CS</code> (не <code>CSGO-</code>) и 46 символов. Если всё равно нет — используй ручную настройку выше.</li>
+<li>Прицел «сбрасывается» — игра перезаписала его настройками облака Steam; сохрани команды в <code>autoexec.cfg</code>.</li>
+<li>Нельзя использовать стороннее ПО «для прицела» поверх игры (оверлеи) — это риск блокировки VAC. Всё выше — только настройки самой игры.</li>
+</ul>
+</article><section class="thanks"><h2>✦ Спасибо за покупку!</h2><p>Если всё получилось — подтвердите заказ на FunPay и оставьте короткий отзыв. Это очень помогает.</p><p>Что-то не открылось или непонятно — напишите в чат заказа, помогу.</p></section></main><footer>Материал носит справочный характер. Названия игр и сервисов принадлежат их правообладателям.</footer><script>document.addEventListener('click',e=>{const b=e.target.closest('.copy');if(!b)return;navigator.clipboard.writeText(b.dataset.c).then(()=>{const t=b.textContent;b.textContent='Скопировано ✓';setTimeout(()=>b.textContent=t,1400)})});</script></body></html>
