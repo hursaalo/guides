@@ -1,0 +1,53 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Minecraft 26.x — Fabric, Sodium и FPS-моды hursaalo</title><meta name="description" content="Новая нумерация версий, установка и разбор вылетов."><meta name="robots" content="noindex"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Caveat:wght@700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><header class="top"><a href="./" class="brand">hursaalo</a></header><main><section class="hero"><div class="sq">🟩🟣</div><h1>Minecraft 26.x — Fabric, Sodium и FPS-моды</h1><p class="lead">Новая нумерация версий, установка и разбор вылетов.</p></section><article class="guide"><p>Minecraft перешёл на <b>новую нумерацию версий</b>: вместо привычных 1.21.x теперь <b>26.x</b> (например, Java Edition 26.3 «Wilderness Bound»). Из-за этого путаются и моды: «версия 1.21» уже не последняя. Здесь — как выбрать версию, поставить Fabric и FPS-моды и не словить вылет при запуске.</p>
+<p>&gt; Дополнение к гайду «Minecraft — FPS для серверов». Если сервер (например FunTime, HolyWorld) работает на 1.21.x или 1.16.5, <b>играй той версией, которую просит сервер</b>, а не последней.</p>
+<h2>1. Какую версию ставить</h2>
+<ul>
+<li>Для одиночной игры и новых серверов: последняя стабильная <b>26.3</b> (релиз 15 сентября 2026).</li>
+<li>Для серверов: смотри на сайте сервера или в его лаунчере, какая версия нужна (часто 1.21.x или 1.16.5 в отдельных режимах).</li>
+<li>Снапшоты (26.4-snapshot…) нестабильны: для игры на сервере и для модов их не берём.</li>
+</ul>
+<h2>2. Установка Fabric на 26.x</h2>
+<ol>
+<li>Скачай установщик только с <b>fabricmc.net/use/installer</b>.</li>
+<li>В установщике выбери <b>Client</b>, в списке версий — <b>26.3</b> (или нужную), нажми Install.</li>
+<li>Открой папку модов: Win+R → <code>%appdata%\.minecraft\mods</code> (если папки нет — создай).</li>
+<li>В лаунчере выбери профиль <b>fabric-loader-…</b> с нужной версией игры.</li>
+</ol>
+<h2>3. FPS-моды для 26.x</h2>
+<p>Ставь на <b>modrinth.com</b> с фильтром: <b>версия игры = твоя (26.3)</b> и <b>загрузчик = Fabric</b>.</p>
+<ul>
+<li><b>Fabric API</b> — обязателен для остальных.</li>
+<li><b>Sodium</b> — главный буст FPS.</li>
+<li><b>Lithium</b> — ускорение логики.</li>
+<li><b>FerriteCore</b> — меньше памяти.</li>
+<li><b>Entity Culling</b> — не рисует скрытое.</li>
+<li><b>ImmediatelyFast</b> и <b>ModernFix</b> — по желанию.</li>
+</ul>
+<p>Если для твоей версии мода ещё нет — подожди: после выхода новой версии игры моды обновляются не сразу. Не ставь «неподходящую» версию мода, игра не запустится.</p>
+<h2>4. Если игра вылетает</h2>
+<ol>
+<li>Убери последний добавленный мод и запусти снова.</li>
+<li>Открой лог: <code>%appdata%\.minecraft\logs\latest.log</code> — внизу написано, какой мод вызвал ошибку.</li>
+<li>Проверь, что версия Fabric API и модов совпадает с версией игры.</li>
+<li>Java: лаунчер обычно ставит нужную сам. Если пишет «неподдерживаемая версия Java» — установи ту, что указана на странице игры, и выбери её в профиле.</li>
+<li>Обнови драйвер видеокарты.</li>
+</ol>
+<h2>5. Память и настройки</h2>
+<ul>
+<li>Профиль → JVM-аргументы: <code>-Xmx4G</code> при 8 ГБ ОЗУ, <code>-Xmx6G</code> при 16 ГБ.</li>
+<li>Дальность прорисовки 6–10, частицы «Уменьшено», облака «Выкл», макс. FPS «Неограниченно».</li>
+<li>Видео-настройки Sodium: включи всё в разделе «Производительность».</li>
+</ul>
+<h2>6. Безопасность</h2>
+<ul>
+<li>Моды и установщик — только с официальных страниц (Modrinth, fabricmc.net). «Сборки с читами» с неизвестных сайтов часто содержат стилер.</li>
+<li>На серверах читы, X-Ray и «киллауры» — бан. Здесь только оптимизация и визуал.</li>
+</ul>
+<h2>Памятка</h2>
+<ol>
+<li>Версия игры = версия сервера.</li>
+<li>Fabric + Fabric API + Sodium + Lithium.</li>
+<li>Все моды строго под ту же версию.</li>
+<li>Вылет → убери последний мод и смотри latest.log.</li>
+</ol>
+</article><section class="thanks"><h2>✦ Спасибо за покупку!</h2><p>Если всё получилось — подтвердите заказ на FunPay и оставьте короткий отзыв. Это очень помогает.</p><p>Что-то не открылось или непонятно — напишите в чат заказа, помогу.</p></section></main><footer>Материал носит справочный характер. Названия игр и сервисов принадлежат их правообладателям.</footer><script>document.addEventListener('click',e=>{const b=e.target.closest('.copy');if(!b)return;navigator.clipboard.writeText(b.dataset.c).then(()=>{const t=b.textContent;b.textContent='Скопировано ✓';setTimeout(()=>b.textContent=t,1400)})});</script></body></html>
